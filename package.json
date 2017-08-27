@@ -1,0 +1,35 @@
+{
+  "name": "nmb",
+  "version": "0.0.1",
+  "description": "Netease Music Board for [ABC-Player like].",
+  "main": "dist/nmb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --display-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Copay/nmb.git"
+  },
+  "keywords": [
+    "netease",
+    "music"
+  ],
+  "author": "Corps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Copay/nmb/issues"
+  },
+  "homepage": "https://github.com/Copay/nmb#readme",
+  "devDependencies": {
+    "@types/node": "^8.0.25",
+    "css-loader": "^0.28.5",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.3.3",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5"
+  }
+}

@@ -1,0 +1,91 @@
+netease-music-board{
+    display:flex;
+    width:75vw;
+    flex-direction:column;
+    &{
+        //元素浮动居中开始
+        position:fixed;
+        z-index:9999;
+        margin:0 auto;
+        top:50%;left:0;right:0;
+        transform: translateY(-50%);
+        //元素浮动居中结束
+    }
+    @media screen and (max-width:760px){
+        width:100vw;
+    }
+    *{
+        display:flex; //令所有子元素成为块元素
+        flex-direction: column;
+    }
+    exiter{
+        display:block;
+        width:2em;
+        height:2em;
+        line-height:2;
+        text-align:center;
+        &::after{ 
+            content:"x";
+        }
+        //总保持在右上角
+        margin-left:auto;
+    }
+    search-box{
+        margin-bottom:1em;
+        box-shadow:0 1em 3em -1.5em;
+    }
+    radio-set{
+        height:3em;
+        align-content: center;
+        flex-direction: row;
+    }
+    radio{
+        flex:1;
+        text-align:center;
+        line-height: 3;
+        font-family:Courier New, Courier, monospace;
+        &.selected{
+            border-bottom:solid 2px green;
+        }
+    }
+    input#inputer{
+        padding:0 1em;
+        height:3em;
+        line-height: 2.5em;
+        border:0;
+        outline:none;
+    }
+    result{
+        flex-direction:row;
+        height:2em;
+        line-height:2em;
+        padding:0 1em;
+    }
+    media-name{
+        flex:1;
+    }
+    button-set{
+        line-height:2.5em;
+        display:block;
+        margin:1em 0.5em;
+        * {
+            display:inline-block;
+            font-weight:bold;
+            font-family: Courier New, Courier, monospace;
+            border-bottom:1.5px black inset;
+            text-transform:uppercase;
+            padding:0 0.5em;
+        }
+    }
+    previous{
+        &::before{
+            content:"< Prevent";
+        }
+    }
+    next{
+        float:right;
+        &::after{
+            content:"After >";
+        }
+    }
+}

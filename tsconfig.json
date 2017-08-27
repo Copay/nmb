@@ -1,0 +1,21 @@
+{
+    "include": [
+        "src/ts"
+    ],
+    "exclude": [
+        "dist",
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "outDir": ".",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "module": "esnext",
+        "target": "esnext",
+        "allowJs": false,
+        "alwaysStrict": true,
+        "declaration": false
+        //"declarationDir": "../declaration"
+    }
+}
