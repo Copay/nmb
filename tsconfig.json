@@ -15,7 +15,7 @@
         "target": "esnext",
         "allowJs": false,
         "alwaysStrict": true,
-        "declaration": false
-        //"declarationDir": "../declaration"
+        "declaration": true,
+        "declarationDir": "../declaration"
     }
 }

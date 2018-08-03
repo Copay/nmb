@@ -1,8 +1,9 @@
 {
   "name": "nmb",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Netease Music Board for [ABC-Player like].",
   "main": "dist/nmb.js",
+  "types": "declaration/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --display-error-details"
